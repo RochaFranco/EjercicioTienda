@@ -1,7 +1,7 @@
 package ejerciciotienda.servicios;
 
 import ejerciciotienda.entidades.Producto;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 
 public class ServicioProducto {
@@ -50,6 +50,14 @@ public class ServicioProducto {
         producto.setPrecio(precio);
 
         return producto;
+    }
+    
+    public void mostrarListaDeProductos(List<Producto> productos){
+        
+        System.out.println("Codigo | Nombre | Precio | CodigoFabricante");
+        for(Producto producto : productos){
+            System.out.println(producto.getCodigo() +" " + producto.getNombre() +" "+ producto.getPrecio() + " "+ producto.getCodigoFabricante());
+        }
     }
     
 }
