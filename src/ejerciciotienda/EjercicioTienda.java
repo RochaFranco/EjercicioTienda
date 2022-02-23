@@ -8,9 +8,19 @@ public class EjercicioTienda {
         
         Producto producto = new Producto(0,"Manopla",420,69);
         
-        System.out.println(producto);
+        mostrarProducto(producto);
+  
+    }
+    
+    public static void mostrarProducto(Producto producto)
+    {
+        System.out.println("el codigo del producto es: " + producto.getCodigo());
+        System.out.println("el nombre del producto es: " + producto.getNombre());
+        System.out.println("el precio del producto es: " + producto.getPrecio());
+        System.out.println("el codigo de fabricante es: " + producto.getCodigoFabricante());
         
     }
     
 }
     
+

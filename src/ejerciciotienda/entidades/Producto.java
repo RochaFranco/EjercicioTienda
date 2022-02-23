@@ -2,7 +2,7 @@ package ejerciciotienda.entidades;
 
 public class Producto {
     
-    int codigo;
+        int codigo;
         String nombre;
         double precio;
         int codigoFabricante;
