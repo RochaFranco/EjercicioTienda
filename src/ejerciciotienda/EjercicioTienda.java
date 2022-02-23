@@ -1,5 +1,7 @@
 package ejerciciotienda;
 
+import ejerciciotienda.entidades.Producto;
+
 public class EjercicioTienda {
 
     public static void main(String[] args) {

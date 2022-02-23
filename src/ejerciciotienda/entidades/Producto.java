@@ -1,4 +1,4 @@
-package ejerciciotienda;
+package ejerciciotienda.entidades;
 
 public class Producto {
     
