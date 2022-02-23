@@ -12,6 +12,10 @@ public class EjercicioTienda {
         
         servicio.mostrarProducto(producto);
         
+        servicio.modificarProducto(producto);
+        
+        servicio.mostrarProducto(producto);
+        
     }
     
     

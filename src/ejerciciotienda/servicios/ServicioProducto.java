@@ -1,6 +1,7 @@
 package ejerciciotienda.servicios;
 
 import ejerciciotienda.entidades.Producto;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class ServicioProducto {
@@ -32,6 +33,22 @@ public class ServicioProducto {
         
         Producto producto = new Producto(codigo,nombre,precio,codigoFabricante);
         
+        return producto;
+    }
+    
+    public Producto modificarProducto(Producto producto)
+    {
+        Scanner scanner = new Scanner(System.in);     
+        
+        System.out.println("Ingrese el nombre del producto: ");
+        String nombre = scanner.next();
+        
+        System.out.println("Ingrese el precio del producto: ");
+        double precio = scanner.nextDouble();
+           
+        producto.setNombre(nombre);
+        producto.setPrecio(precio);
+
         return producto;
     }
     
