@@ -6,12 +6,12 @@ import ejerciciotienda.servicios.ServicioProducto;
 public class EjercicioTienda {
 
     public static void main(String[] args) {
-        
-        Producto producto = new Producto(0,"Manopla",420,69);
-        
         ServicioProducto servicio = new ServicioProducto();
-  
+        
+        Producto producto = servicio.crearProducto();
+        
         servicio.mostrarProducto(producto);
+        
     }
     
     
