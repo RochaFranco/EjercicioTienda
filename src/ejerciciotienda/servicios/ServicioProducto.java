@@ -60,4 +60,12 @@ public class ServicioProducto {
         }
     }
     
+    public void mostrarListaDeNombreYPrecioDeProductos(List<Producto> productos){
+        
+        System.out.println("Nombre | Precio");
+        for(Producto producto : productos){
+            System.out.println(producto.getNombre() +" "+ producto.getPrecio() );
+        }
+    }
+    
 }

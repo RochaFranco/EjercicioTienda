@@ -38,6 +38,7 @@ public class ServicioMenu  {
                 break;
                 
             case "b": 
+                servicioProducto.mostrarListaDeNombreYPrecioDeProductos(dao.obtenerLista());
                 break;
                 
             case "c":
