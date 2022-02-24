@@ -2,6 +2,7 @@ package ejerciciotienda;
 
 import ejerciciotienda.entidades.Producto;
 import ejerciciotienda.persistencia.DAOProducto;
+import ejerciciotienda.servicios.ServicioFabricante;
 import ejerciciotienda.servicios.ServicioMenu;
 import ejerciciotienda.servicios.ServicioProducto;
 import java.sql.*;
@@ -15,7 +16,8 @@ public class EjercicioTienda {
         
         ServicioProducto servicioProducto = new ServicioProducto();
         DAOProducto dao = new DAOProducto();
-        ServicioMenu servicioMenu = new ServicioMenu(servicioProducto,dao);
+        ServicioFabricante servicioFabricante = new ServicioFabricante();
+        ServicioMenu servicioMenu = new ServicioMenu(servicioProducto,dao,servicioFabricante);
        
    
         servicioMenu.mostrarYEjecutarMenu();

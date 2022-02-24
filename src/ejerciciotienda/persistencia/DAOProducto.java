@@ -1,5 +1,6 @@
 package ejerciciotienda.persistencia;
 
+import ejerciciotienda.entidades.Fabricante;
 import ejerciciotienda.entidades.Producto;
 import java.sql.*;
 import java.util.*;
@@ -169,6 +170,36 @@ public class DAOProducto {
         }
         
         String sql = "INSERT INTO producto VALUES(" + nuevoProducto.getCodigo()+ ", '"+ nuevoProducto.getNombre() + "', " + nuevoProducto.getPrecio()+ ", "+ nuevoProducto.getCodigoFabricante()+");";
+        
+        Statement stmt = connection.createStatement();
+        
+        stmt.executeUpdate(sql);
+        
+        connection.close();
+        
+    }
+    
+    public void agregarFabricante(Fabricante fabricante) throws SQLException, ClassNotFoundException
+    {
+        
+        Connection connection = null;
+        
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            String url = "jdbc:mysql://localhost:3306/tienda?useSSL=false";
+            connection = DriverManager.getConnection(url, "root", "root");   
+            System.out.println("Ingrese");
+        }
+        catch (SQLException ex)
+        {
+            connection = null;
+            ex.printStackTrace();
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+        
+        String sql = "INSERT INTO fabricante VALUES("+ fabricante.getCodigo()+", '" + fabricante.getNombre() + "');";
         
         Statement stmt = connection.createStatement();
         

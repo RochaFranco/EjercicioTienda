@@ -8,12 +8,14 @@ public class ServicioMenu  {
     
     private final ServicioProducto servicioProducto;
     private final DAOProducto dao;
+    private final ServicioFabricante servicioFabricante;
     
     
 
-    public ServicioMenu(ServicioProducto servicioProducto, DAOProducto dao) {
+    public ServicioMenu(ServicioProducto servicioProducto, DAOProducto dao, ServicioFabricante servicioFabricante) {
         this.servicioProducto = servicioProducto;
         this.dao = dao;
+        this.servicioFabricante = servicioFabricante;
         
     }
     
@@ -60,6 +62,7 @@ public class ServicioMenu  {
                 break;
                 
             case "g":
+                dao.agregarFabricante(servicioFabricante.crearFabricante());
                 break;
                 
             case "h":
