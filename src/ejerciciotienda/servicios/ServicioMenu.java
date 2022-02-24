@@ -1,5 +1,6 @@
 package ejerciciotienda.servicios;
 import ejerciciotienda.persistencia.DAOProducto;
+import java.sql.SQLException;
 import java.util.*;
 
 public class ServicioMenu  {
@@ -15,7 +16,7 @@ public class ServicioMenu  {
         
     }
     
-    public void mostrarYEjecutarMenu(){
+    public void mostrarYEjecutarMenu() throws ClassNotFoundException, SQLException{
         
         Scanner scanner = new Scanner(System.in);
         
@@ -33,6 +34,7 @@ public class ServicioMenu  {
         switch(opcion)
         {
             case "a": 
+                servicioProducto.mostrarListaDeProductos(dao.obtenerLista());
                 break;
                 
             case "b": 
