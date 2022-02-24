@@ -16,7 +16,16 @@ public class EjercicioTienda {
        
        List<Producto> productos = dao.obtenerLista();
        
-     servicio.mostrarListaDeProductos(productos);
+        System.out.println("a) Lista el nombre de todos los productos que hay en la tabla producto.");
+        System.out.println("b) Lista los nombres y los precios de todos los productos de la tabla producto.");
+        System.out.println("c) Listar aquellos productos que su precio esté entre 120 y 202.");
+        System.out.println("d) Buscar y listar todos los Portátiles de la tabla producto.");
+        System.out.println("e) Listar el nombre y el precio del producto más barato.");
+        System.out.println("f) Ingresar un producto a la base de datos.");
+        System.out.println("g) Ingresar un fabricante a la base de datos");
+        System.out.println("h) Editar un producto con datos a elección.");
+     
+     
         
         
     }
