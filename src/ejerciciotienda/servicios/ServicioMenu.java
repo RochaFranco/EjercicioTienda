@@ -51,6 +51,7 @@ public class ServicioMenu  {
                 break;
                 
             case "e":
+                servicioProducto.mostrarListaDeProductos(dao.obtenerProductoMasBarato());
                 break;
                 
             case "f":
