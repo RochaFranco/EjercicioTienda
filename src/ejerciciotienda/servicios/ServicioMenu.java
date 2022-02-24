@@ -1,4 +1,5 @@
 package ejerciciotienda.servicios;
+import ejerciciotienda.entidades.Producto;
 import ejerciciotienda.persistencia.DAOProducto;
 import java.sql.SQLException;
 import java.util.*;
@@ -55,6 +56,7 @@ public class ServicioMenu  {
                 break;
                 
             case "f":
+                dao.agregarProducto(servicioProducto.crearProducto());
                 break;
                 
             case "g":
