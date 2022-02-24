@@ -49,6 +49,8 @@ public class DAOProducto {
             
         }
         
+        connection.close();
+        
         return productos;
         
     } 
