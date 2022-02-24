@@ -42,6 +42,7 @@ public class ServicioMenu  {
                 break;
                 
             case "c":
+                servicioProducto.mostrarProductosEntre120y202(dao.obtenerLista());
                 break;
                 
             case "d":

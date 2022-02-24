@@ -68,4 +68,17 @@ public class ServicioProducto {
         }
     }
     
+    public void mostrarProductosEntre120y202(List<Producto> productos)
+    {
+        System.out.println("Codigo | Nombre | Precio | CodigoFabricante");
+        for(Producto producto : productos){
+            
+            if(producto.getPrecio() > 120 && producto.getPrecio() < 202){
+                System.out.println(producto.getCodigo() +" " + producto.getNombre() +" "+ producto.getPrecio() + " "+ producto.getCodigoFabricante());
+            }
+            
+            
+        }
+    }
+    
 }
