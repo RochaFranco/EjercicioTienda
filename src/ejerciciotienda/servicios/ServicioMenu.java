@@ -47,6 +47,7 @@ public class ServicioMenu  {
                 
             case "d":
                 servicioProducto.mostrarListaDeProductos(dao.obtenerPortatiles());
+
                 break;
                 
             case "e":
