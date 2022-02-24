@@ -75,10 +75,9 @@ public class ServicioProducto {
             
             if(producto.getPrecio() > 120 && producto.getPrecio() < 202){
                 System.out.println(producto.getCodigo() +" " + producto.getNombre() +" "+ producto.getPrecio() + " "+ producto.getCodigoFabricante());
-            }
-            
-            
+            } 
         }
     }
+   
     
 }
